@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display_school</title>
+</head>
+<body>
+    <center>
+            <table border="2px">
+                <tr>
+                    <th>schoolName</th>
+                    <th>principal</th>
+                    <th>location</th>
+                </tr>
+                
+                {% for so in QSSO %}
+                <tr>
+                    <td>{{ so.schoolName }}</td>
+                    <td>{{ so.principal }}</td>
+                    <td>{{ so.location }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+    </center>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display_student</title>
+</head>
+<body>
+    
+    <center>
+        <table border="2px">
+            <tr>
+                <th>schoolName</th>
+                <th>studentName</th>
+                <th>studentID</th>
+            </tr>
+            
+            {% for st in QSSTO %}
+            <tr>
+                <td>{{ st.schoolName }}</td>
+                <td>{{ st.studentName }}</td>
+                <td>{{ st.studentID }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+</center>
+
+</body>
+</html>
